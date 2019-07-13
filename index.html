@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container"  align = 'center'>
+		<div id="botoes_operacoes" class="botoes" >
+			<button id="id_btn_limpar"type="button" onclick="limpar_tela()">Limpar Tela</button>
+			<button id="id_btn_pickponto" type="button" onclick="selecionar_ponto()">Selecionar</button>
+			<button id="btn_escala" type="button" onclick="trans_escalar()" >Mover</button>
+			<button id="btn_translacao" type="button" onclick="trans_transladar()" >Transladar</button>
+			<button id="btn_rotacao" type="button" onclick="trans_rotacionar()" >Rotacionar</button>
+			<button id="btn_espelho" type="button" onclick="trans_espelhar()" >Espelhar</button>
+			<button id="btn_quickhull" type="button" onclick="QuickHull()" >QuickHull</button>
+
+
+		</div>
+		<div id="botoes_desenho" class="botoes"  >
+			<button id="id_btn_ponto"     type="button" onclick="desenha_ponto()"></button>
+			<button id="id_btn_reta"      type="button" onclick="desenha_reta()"></button>
+			<button id="id_btn_poligono"  type="button" ></button>
+			<button id="id_btn_poligonal" type="button" ></button>
+		</div>
+		<div id="div_canvas" class="ClassCanvas">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div Id='CoordsMousexy'></div>
+    
+    	<script type="text/javascript" src="ponto_f.js"></script>
+		<script type="text/javascript" src="reta_f.js"></script>
+		<script type="text/javascript" src="quickHull.js"></script>
+		<script type="text/javascript" src="operacoes.js"></script>	
+</div> 
+
+</body>
+</html>

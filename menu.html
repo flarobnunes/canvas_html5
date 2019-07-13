@@ -1,0 +1,56 @@
+<!-começa aqui->
+<HEAD>
+<style type="text/css">
+.menulinks {position:relative;}
+#menucont a{color:#1E90FF; font-weight:bold; text-decoration:none;}
+#menucont a:hover{color:#ff0000; font-weight:bold; text-decoration:underline overline; text-transform: uppercase;}
+</style>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+nSpace=10   // espaço que as letras se afastam
+nSpeed=500 // velocidade da animação
+timerLSM=null;
+function LetterSpacingMenu() {
+  if(document.getElementById){
+  lnks = Math.floor(Math.random()*lnk.length);
+  letterSpacing = Math.floor(Math.random()*nSpace);
+  lnk[lnks].style.letterSpacing = letterSpacing + "px";
+  timerLSM = setTimeout("LetterSpacingMenu()", nSpeed);
+  }
+}
+function StopMenu() {
+  if(document.getElementById) {
+  clearTimeout(timerLSM);
+  for(i=0;i<lnk.length;i++)
+  lnk[i].style.letterSpacing = 0 + "px";
+  }
+}
+function LSMenuInit() {
+  if(document.getElementById) {
+  lnk = document.getElementById("menucont").getElementsByTagName("a");
+  cnt = document.getElementById("menucont");
+  cnt.style.textAlign= "center";
+  cnt.onmouseover=StopMenu;
+  cnt.onmouseout=LetterSpacingMenu;
+  LetterSpacingMenu();
+  }
+}
+onload=LSMenuInit;
+<!-- 
+// -->
+</script>
+</HEAD>
+<BODY>
+<div id="menucont">
+  <a href="#" id="a1" class="menulinks" title="página 1"><font face=verdana size=1>página 1</a>&nbsp;|&nbsp;
+  <a href="#" id="a2" class="menulinks" title="página 2">página 2</a>&nbsp;|&nbsp; 
+  <a href="#" id="a3" class="menulinks" title="página 3">página 3</a>&nbsp;|&nbsp;  <a href="#" id="a4" class="menulinks" title="página 4">página 4</a>&nbsp;|&nbsp;
+  <a href="#" id="a5" class="menulinks" title="página 5">página 5</a>&nbsp;|&nbsp;
+  <a href="#" id="a6" class="menulinks" title="página 6">página 6</a>
+</font>
+</div>
+<!-termina aqui->
+ 
+</head>
+</body>
+</html>

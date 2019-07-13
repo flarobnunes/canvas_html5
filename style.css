@@ -1,0 +1,50 @@
+
+#container{
+	align: center;
+}
+#botoes_operacoes{
+    width: 400px;
+    padding: 3px 3px;
+    border: 2px;
+    border-radius:5px;
+    background-color: steelblue;
+    font-size: 10px;
+}
+#botoes_desenho{
+    width: 400px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    font-size: 10px;
+}
+#id_btn_ponto{
+  width: 25px;
+  height: 25px;
+  background-image: url('ponto_normal.jpg');
+}
+#id_btn_reta{
+  width: 25px;
+  height: 25px;
+  background-image: url('reta_normal.jpg');
+}
+#id_btn_poligono{
+  width: 25px;
+  height: 25px;
+  background-image: url('poligono_normal.jpg');
+}
+#id_btn_poligonal{
+  width: 25px;
+  height: 25px;
+  background-image: url('poligonal_normal.jpg');
+}
+
+#CoordsMousexy{
+	color : black;
+    width: 45px;
+    padding: 2px 2px;
+    border: 4px;
+    border-radius:5px;
+    background-color: lightblue;
+    font-size: 11px;
+}
+
